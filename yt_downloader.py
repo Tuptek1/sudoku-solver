@@ -1,4 +1,6 @@
-a = [1,2,3]
-print("hello world")
-for i in a:
-    print(i)
+import pafy
+url = input('Enter your link: ')
+video = pafy.new(url)
+streams = video.streams
+for s in streams:
+   print(s)
